@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./public/register.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div id="logo">
+              <img src="../public/assets/BCS LOGO.png" alt="bcs">
+              <span id="bcs">BACKSLASH</span>
+          </div>
+          <ul id="nav-list">
+              <li id="home">Home</li>
+              <li id="cryptic">Cryptic</li>
+              <li id="register">Add-Members</li>
+          </ul> 
+      </nav>
+  </header>
+      <span class="title">Add Team Members</span>
+      <form action=""></form>
+    <form action="/signup" method="post" class="signup-form" id="memberForm">
+
+        <label for="member" id="memberLabel" class="member-label ">Member Username</label>
+        <input type="text" name="member" id="member" />
+  
+        <label for="email" class="member-label">Mail</label>
+        <input type="email" name="mail" id="mail" />
+
+        <div id="err" class="error-message"></div>
+
+      <input type="submit" value="Sign Up" class="submit-button" id="final-submit" />
+    </form>
+
+    <div class="message"></div>
+    <script type="text/javascript" src="../scripts/register.js" defer></script>
+  </body>
+</html>

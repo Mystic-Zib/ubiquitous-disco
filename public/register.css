@@ -1,0 +1,124 @@
+body {
+    background-color: #111; /* Dark background */
+    color: #fff; /* Text color */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+header{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+nav{
+    height: 10vh;
+    width: 97vw;
+    margin: 0 1.5vw;
+    background-color: rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    list-style: none;
+    padding: 0;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+
+img[alt="bcs"]{
+    height: 100%;
+    width: 50px;
+}
+#bcs{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    background-color: #333; /* Input background color */
+    color: #fff; /* Input text color */
+}
+
+#g-recaptcha {
+    margin-bottom: 20px;
+}
+
+#submit {
+    padding: 10px;
+    background-color: #4CAF50; /* Submit button color */
+    color: #fff; /* Submit button text color */
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.submit-button{
+    margin: 1em;
+    padding: 0.75em 1em;
+}
+
+#submit:hover {
+    background-color: #45a049; /* Hover color */
+}
+
+#error {
+    color: #D22B2B;
+    font-weight: bolder;
+}
+
+#last {
+    margin-top: 20px;
+}
+
+#login {
+    color: #4CAF50; /* Login link color */
+    cursor: pointer;
+}
+
+#login:hover {
+    text-decoration: underline;
+}
+.hidden{
+    display: none;
+}
+
+#back{
+    width: fit-content;
+}
+
+.message{
+    position: absolute;
+    top: 20vh;
+    right: 0;
+}

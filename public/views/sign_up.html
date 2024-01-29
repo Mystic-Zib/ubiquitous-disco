@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../public/sign_up.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <span class="title">Sign Up</span>
+    <span class="title">[Team Leader]</span>
+    <form action="/signup" method="post" class="signup-form">
+      <label for="username">Leader Username</label>
+      <input type="text" name="username" id="username" required />
+
+      <label for="email">Mail</label>
+      <input type="email" name="mail" id="mail" required />
+
+      
+      <label class="teamNameclass" for="team">Team Name</label>
+      <input
+        type="text"
+        name="teamName"
+        id="teamName"
+      />
+
+      <label for="password">Team Password</label>
+      <input type="password" name="password" id="password" required />
+
+      <!-- Updated Registration Form -->
+      <!-- <label for="Role">Choose your Role</label>
+      <select name="role" id="role">
+        <option value="" disabled selected>Select Role</option>
+        <option value="team_leader">Team Leader</option>
+        <option value="team_member">Team Member</option>
+      </select> -->
+
+
+      <div id="err" class="error-message"></div>
+
+      <input type="submit" value="Sign Up" class="submit-button" />
+    </form>
+
+    <div class="separator">
+      <div class="line"></div>
+      <span>or</span>
+      <div class="line"></div>
+    </div>
+
+    <span class="last"
+      >Already have an account? <span class="login-link">Login</span></span
+    >
+    <script type="text/javascript" src="../scripts/sign_up.js" defer></script>
+  </body>
+</html>

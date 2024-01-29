@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #081c24;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-title {
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.login-form label {
+    margin-bottom: 8px;
+}
+
+.g-recaptcha {
+    margin-top: 10px;
+}
+
+.login-button {
+    font-weight: bolder;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line {
+    height: 2px;
+    width: 14vw;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.oauth-button {
+    font-weight: bolder;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.signup-text {
+    color: #D22B2B;
+    font-weight: bolder;
+}
+
+.signup-link {
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}

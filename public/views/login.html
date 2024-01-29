@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../public/login.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <span class="login-title">Login</span>
+    <form class="login-form">
+        
+        <label for="teamName">Team Name</label>
+        <input type="text" name="teamName" id="teamName">
+
+        <div id="err"></div>
+
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+
+        <input id="submit" type="submit" value="Log In" class="login-button">
+
+    </form>
+    <div class="separator">
+        <div class="line"></div>
+        <span>or</span>
+        <div class="line"></div>
+    </div>
+
+    <button id="Oauth" class="oauth-button">Sign in with Google</button>
+    <br>
+
+    <span id="last" class="signup-text">Don't have an account? <span id="signUp" class="signup-link">Sign Up</span></span>
+    <script src="../scripts/login.js" defer></script>
+</body>
+</html>
