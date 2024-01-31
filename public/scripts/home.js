@@ -16,7 +16,7 @@ home.addEventListener("click",(e)=>{
 
 cryptic.addEventListener("click",(e)=>{
     e.preventDefault();
-    window.location.href = "http://localhost:3000/crypt";
+    window.location.href = "/crypt";
 });
 
 document.addEventListener("mousemove",(e)=>{

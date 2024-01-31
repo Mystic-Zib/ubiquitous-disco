@@ -18,17 +18,17 @@ home.addEventListener("click",(e)=>{
 
 cryptic.addEventListener("click",(e)=>{
     e.preventDefault();
-    window.location.href = "http://localhost:3000/crypt";
+    window.location.href = "/crypt";
 });
 
 logout.addEventListener("click",(e)=>{
     e.preventDefault();
-    window.location.href = "http://localhost:3000/logout";
+    window.location.href = "/logout";
 });
 
 register.addEventListener("click",(e)=>{
     e.preventDefault();
-    window.location.href = "http://localhost:3000/register";
+    window.location.href = "/register";
 });
 
 document.addEventListener("mousemove",(e)=>{

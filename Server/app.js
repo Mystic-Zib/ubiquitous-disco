@@ -12,6 +12,8 @@ import { authenticateToken } from './src/middleware/authMiddleware.js';
 import logoutRoute from "./src/routes/logoutroute.js";
 
 const app = express();
+const NUM_INSTANCES = 10;
+const START_PORT = 8001;
 
 app.use(logoutRoute)
 
@@ -80,6 +82,30 @@ app.use(authRoute);
 app.use(crypticRoute);
 app.use(dashboardRoute);
 
-app.listen(3000, () => {
-    console.log(`Server is running on http://localhost:3000`);
-});
+function startServers() {
+    for (let i = 0; i < NUM_INSTANCES; i++) {
+        const port = START_PORT + i;
+        app.listen(port, () => {
+            console.log(`Server is running on http://localhost:${port}`);
+        });
+    }
+}
+
+// If running in clustered mode with PM2
+if (process.env.NODE_APP_INSTANCE !== undefined) {
+    startServers(); // Start servers for each instance
+} else {
+    // Otherwise, start PM2 in clustered mode
+    const instances = NUM_INSTANCES || 1; 
+    const { fork } = await import('pm2');
+
+    fork(import.meta.url, {
+        instances,
+        exec_mode: 'cluster'
+    }, (err) => {
+        if (err) {
+            console.error('Error starting application:', err);
+            process.exit(1);
+        }
+    });
+}
